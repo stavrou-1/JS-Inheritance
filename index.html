@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Inheritance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <code id="view"></code>
+
+    <h3>Filter Products</h3>
+    <p>By Index</p>
+    <button onclick="s.filterArray(5)">By Index 5</button>
+    <button onclick="f.grabApiData(1)">Grab API Data</button>
+    <button onclick="f.clear()">All Data</button>
+    <p>By Genre</p>
+    <button onclick="s.filterArray('genre', 'Pants')">Pants</button>
+    <button onclick="s.filterArray('genre', 'Shirt')">Shirt</button>
+    <button onclick="s.filterArray('genre', 'Clubs')">Clubs</button>
+    <p>By Amount</p>
+    <button onclick="s.filterArray('price', '0-30')">0 - 30</button>
+    <button onclick="s.filterArray('price', '20-50')">50 - 100</button>
+    <button onclick="s.filterArray('price', '50-150')">100 - 150</button>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
